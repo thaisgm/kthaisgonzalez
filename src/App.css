@@ -13,8 +13,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.firstRow {
+  background: url('./backgroundImage.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +26,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.secondRow {
+  background-color: white;
+  min-height: 100vh;
 }
 
 .App-link {
@@ -35,4 +44,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-nav {
+  display: inline-block;
+  margin: auto;
 }

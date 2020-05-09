@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import background from './backgroundImage.JPG';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,6 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
   return (
@@ -14,7 +18,7 @@ function App() {
     <Navbar bg="light" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
+      <Nav className="main-nav">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#resume">Resume</Nav.Link>
         <Nav.Link href="#graphicDesign">Graphic Design</Nav.Link>
@@ -28,20 +32,14 @@ function App() {
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <Container fluid>
+    <Row className="firstRow">
+      <Col className="name">Thais Gonzalez</Col>
+    </Row>
+    <Row className="secondRow">
+      <Col> 1 of 2</Col>
+    </Row>
+  </Container>
     </div>
   );
 }
