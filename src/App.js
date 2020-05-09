@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import background from './backgroundImage.JPG';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,7 +16,7 @@ function App() {
     <Navbar bg="light" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="main-nav">
+      <Nav className="mr-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#resume">Resume</Nav.Link>
         <Nav.Link href="#graphicDesign">Graphic Design</Nav.Link>
