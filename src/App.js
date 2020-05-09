@@ -32,12 +32,26 @@ function App() {
       </Nav>
     </Navbar.Collapse>
   </Navbar>
+
   <Container fluid>
     <Row className="firstRow">
       <Col className="name">Thais Gonzalez</Col>
+      <Col className="bio">Univerisity of Michigan Graduate</Col>
     </Row>
+  </Container>
+  <Container className="secondContainer">
     <Row className="secondRow">
-      <Col> 1 of 2</Col>
+      <span className="aboutMe"> About Me </span>
+      <Row className="subRow">
+        <Col>
+          <Col className="experience"> My Experience </Col>
+          <Col className="expParagraph"> I played 4 years of DI Softball at Michigan, collecting two BIG10 championship titles. I graduated  having majored in Business with concentrations in strategy and technology. I have past internship experience in software development and CRM technology.</Col>
+        </Col>
+        <Col>
+          <Col className="skillset"> My Skillset </Col>
+          <Col className="skillParagraph">Throughout my coursework I've studied financial management skills such as market analysis, business evaluation, and product development. Additionally, I have experience in various coding languages, primarily Javascript, HTML/CSS, React, and Node.js.</Col>
+        </Col>
+      </Row>
     </Row>
   </Container>
     </div>
