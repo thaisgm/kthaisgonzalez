@@ -5,6 +5,7 @@
 
 .firstRow {
   background: url('./backgroundImage.JPG') no-repeat center center fixed;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,11 +18,17 @@
   padding: 20px;
 }
 
+#basic-nav-dropdown {
+  position: relative;
+  z-index: 100;
+}
+
 .name {
   font-size: calc(30px + 6vmin);
   color: white;
   opacity: 0.8;
   flex-grow: 0 !important;
+  padding-top: 15%;
 }
 
 .bio {

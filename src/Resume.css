@@ -1,0 +1,46 @@
+.Resume {
+  background: url('./SFB20-FL.JPG') no-repeat center center fixed;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end !important;
+  justify-content: center;
+  padding: 20px;
+}
+
+.download {
+  border-radius: 15px;
+  background: #F6F6F6;
+  width: 50%;
+  opacity: 0.8;
+}
+
+.download:after {
+  content: "";
+  display: block;
+  padding-bottom: 15%;
+}
+
+.downloadTextBox {
+  display: flex;
+  flex-flow: row !important;
+  justify-content: center;
+}
+
+.downloadText {
+  font-family: sans-serif;
+  font-size: 1.25vw;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.downloadBtn {
+  width: 60%;
+  margin-top: 2.5%;
+}
