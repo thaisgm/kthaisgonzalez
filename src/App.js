@@ -9,17 +9,23 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
-  Route
+  Route,
+  NavLink
 } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
+
 
 import Resume from './Resume';
-import GraphicDesign from './GraphicDesign';
+{
+  /* import GraphicDesign from './GraphicDesign';
 import Projects from './Projects';
 import BingeBuddy from './BingeBuddy';
 import SFSchool from './SFSchool';
 import Gifter from './Gifter';
+*/}
+
 
 function App() {
   return (
@@ -29,9 +35,9 @@ function App() {
 
     <Switch>
       <Route exact path="/"> <Home/> </Route>
-      <Route exact path="/resume"> <Resume/> </Route>
-      <Route exact path="/graphicdesign"> <GraphicDesign/> </Route>
-      <Route exact path="/overview"> <Projects/> </Route>
+      <Route path="/resume"> <Resume/> </Route>
+      <Route path="/graphicdesign"> <GraphicDesign/> </Route>
+      <Route path="/overview"> <Projects/> </Route>
       {/*
       <Route exact path="/bingebuddy"> <BingeBuddy/> </Route>
       <Route exact path="/sfschoolfinder"> <SFSchool/> </Route>
@@ -51,11 +57,11 @@ function Navigation(){
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/resume">Resume</Nav.Link>
-          <Nav.Link href="/graphicdesign">Graphic Design</Nav.Link>
+          <LinkContainer to="/"><Nav.Link>Home</Nav.Link></LinkContainer>
+          <LinkContainer to="/resume"><Nav.Link>Resume</Nav.Link></LinkContainer>
+          <LinkContainer to="/graphicdesign"><Nav.Link>Graphic Design</Nav.Link></LinkContainer>
           <NavDropdown title="Projects" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/overview">Projects Overview</NavDropdown.Item>
+            <LinkContainer to="/overview"><NavDropdown.Item>Projects Overview</NavDropdown.Item></LinkContainer>
             <NavDropdown.Divider />
             {/*
             <NavDropdown.Item href="/bingebuddy">Binge Buddy</NavDropdown.Item>
