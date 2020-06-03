@@ -1,0 +1,67 @@
+.Projects {
+  background: url('./IMG_0380.jpg') no-repeat center center fixed;
+  /* Full height */
+  min-height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.each-fade {
+  display: flex;
+  background: rgba(46, 65, 116, 0.3);
+  margin-top: 7%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 5px 10px rgba(46, 65, 116, 0.3);
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 80%;
+}
+
+.each-fade h2, p, Button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.25vw
+}
+
+p {
+  font-size: 1.25vw;
+}
+
+.learnMore {
+  font-size: 1.0vw;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+}

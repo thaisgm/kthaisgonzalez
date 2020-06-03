@@ -11,20 +11,17 @@ import Col from 'react-bootstrap/Col';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  NavLink
+  Route
 } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 
 
 import Resume from './Resume';
-{
-  /* import GraphicDesign from './GraphicDesign';
+import GraphicDesign from './GraphicDesign';
 import Projects from './Projects';
 import BingeBuddy from './BingeBuddy';
 import SFSchool from './SFSchool';
 import Gifter from './Gifter';
-*/}
 
 
 function App() {
@@ -38,11 +35,9 @@ function App() {
       <Route path="/resume"> <Resume/> </Route>
       <Route path="/graphicdesign"> <GraphicDesign/> </Route>
       <Route path="/overview"> <Projects/> </Route>
-      {/*
       <Route exact path="/bingebuddy"> <BingeBuddy/> </Route>
       <Route exact path="/sfschoolfinder"> <SFSchool/> </Route>
       <Route exact path="/gifter"> <Gifter/> </Route>
-      */}
     </Switch>
 
   </Router>
@@ -63,11 +58,9 @@ function Navigation(){
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <LinkContainer to="/overview"><NavDropdown.Item>Projects Overview</NavDropdown.Item></LinkContainer>
             <NavDropdown.Divider />
-            {/*
-            <NavDropdown.Item href="/bingebuddy">Binge Buddy</NavDropdown.Item>
-            <NavDropdown.Item href="/sfschoolfinder">San Francisco School Finder</NavDropdown.Item>
-            <NavDropdown.Item href="/gifter">Gifter</NavDropdown.Item>
-            */}
+            <LinkContainer to="/bingebuddy"><NavDropdown.Item>Binge Buddy</NavDropdown.Item></LinkContainer>
+            <LinkContainer to="/sfschoolfinder"><NavDropdown.Item>San Francisco School Finder</NavDropdown.Item></LinkContainer>
+            <LinkContainer to="/gifter"><NavDropdown.Item>Gifter</NavDropdown.Item></LinkContainer>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
