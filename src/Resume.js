@@ -10,6 +10,7 @@ function Resume() {
           <p className="downloadText"> Throughout my time at Michigan, I've gathered a variety of experience in fullstack development, marketing automation, and product design. Click below to download my resume!</p>
         </div>
         <Button className="downloadBtn" variant="primary" href="https://drive.google.com/open?id=1Qy75I026BvIH7E9ikZRd7OEZfxXPnURp">
+        View my Resume!
         </Button>
       </div>
     </div>
