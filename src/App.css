@@ -52,8 +52,13 @@
 .aboutMe {
   max-width: 100% !important;
   font-size: calc(30px + 6vmin);
-  min-height: 25vh;
+  min-height: 15vh;
   font-weight: bold;
+}
+
+.cartoon {
+  max-width: 30%;
+  align-self: center;
 }
 
 .experience {
@@ -64,4 +69,22 @@
 .skillset {
   font-size: calc(20px + 3vmin);
   min-height: 10vh;
+}
+
+.socialMedia {
+  flex-direction: row!important;
+  flex-wrap: nowrap!important;
+  align-items: baseline;
+  margin-top: -15%;
+}
+
+.socialLogoL {
+  max-width: 40%;
+  align-content: space-around;
+
+}
+
+.socialLogo {
+  max-width: 30%;
+  align-content: space-around;
 }

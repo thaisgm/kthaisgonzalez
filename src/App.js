@@ -8,17 +8,23 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import Image from 'react-bootstrap/Image';
+import ThaisCartoon from './thaisCartoon.jpg';
+import LinkedInLogo from './linkedinLogo.png';
+import InstagramLogo from './instagramLogo.png';
+import GithubLogo from './GithubLogo.svg';
+
 import {
   HashRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 
 
 import Resume from './Resume';
 import GraphicDesign from './GraphicDesign';
-import Projects from './Projects';
+import ProjectsOverview from './Projects';
 import BingeBuddy from './BingeBuddy';
 import SFSchool from './SFSchool';
 import Gifter from './Gifter';
@@ -34,7 +40,7 @@ function App() {
       <Route exact path="/"> <Home/> </Route>
       <Route path="/resume"> <Resume/> </Route>
       <Route path="/graphicdesign"> <GraphicDesign/> </Route>
-      <Route path="/overview"> <Projects/> </Route>
+      <Route path="/overview"> <ProjectsOverview/> </Route>
       <Route exact path="/bingebuddy"> <BingeBuddy/> </Route>
       <Route exact path="/sfschoolfinder"> <SFSchool/> </Route>
       <Route exact path="/gifter"> <Gifter/> </Route>
@@ -58,9 +64,9 @@ function Navigation(){
           <NavDropdown title="Projects" id="basic-nav-dropdown">
             <LinkContainer to="/overview"><NavDropdown.Item>Projects Overview</NavDropdown.Item></LinkContainer>
             <NavDropdown.Divider />
-            <LinkContainer to="/bingebuddy"><NavDropdown.Item>Binge Buddy</NavDropdown.Item></LinkContainer>
             <LinkContainer to="/sfschoolfinder"><NavDropdown.Item>San Francisco School Finder</NavDropdown.Item></LinkContainer>
             <LinkContainer to="/gifter"><NavDropdown.Item>Gifter</NavDropdown.Item></LinkContainer>
+            <LinkContainer to="/bingebuddy"><NavDropdown.Item>Binge Buddy</NavDropdown.Item></LinkContainer>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
@@ -81,6 +87,7 @@ function Home(){
       <Container className="secondContainer">
         <Row className="secondRow">
           <span className="aboutMe"> About Me </span>
+          <Image className="cartoon" src={ThaisCartoon} roundedCircle/>
           <Row className="subRow">
             <Col>
               <Col className="experience"> My Experience </Col>
@@ -93,6 +100,14 @@ function Home(){
           </Row>
         </Row>
       </Container>
+      <Container>
+        <Row className="socialMedia">
+          <a href="https://www.linkedin.com/in/k-thais-gonzalez-34bb675a/"> <Image className="socialLogoL" src={LinkedInLogo}/> </a>
+          <a href="https://www.instagram.com/kthaisgonzalez/?hl=en"> <Image className="socialLogo" src={InstagramLogo}/> </a>
+          <a href="https://github.com/thaisgm"> <Image className="socialLogo" src={GithubLogo} /> </a>
+        </Row>
+      </Container>
+
     </div>
   )
 }
