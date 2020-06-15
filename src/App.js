@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import $ from 'jquery';
 
 import Image from 'react-bootstrap/Image';
 import ThaisCartoon from './thaisCartoon.jpg';
@@ -111,5 +112,20 @@ function Home(){
     </div>
   )
 }
+
+// $(function() {
+// 	// Get page title
+//   	var pageTitle = $("title").text();
+//
+// 	// Change page title on blur
+// 	$(window).blur(function() {
+// 	  $("title").text("Feel free to reach out!");
+// 	});
+//
+// 	// Change page title back on focus
+// 	$(window).focus(function() {
+// 	  $("title").text(pageTitle);
+// 	});
+// });
 
 export default App;
