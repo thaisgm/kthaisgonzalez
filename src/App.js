@@ -82,7 +82,7 @@ function Home(){
       <Container fluid>
         <Row className="firstRow">
           <Col className="name">Thais Gonzalez</Col>
-          <Col className="bio">Univerisity of Michigan 2020 Graduate</Col>
+          <Col className="bio">Michigan Master's of Science in Information Student</Col>
         </Row>
       </Container>
       <Container className="secondContainer">
@@ -92,11 +92,11 @@ function Home(){
           <Row className="subRow">
             <Col>
               <Col className="experience"> My Experience </Col>
-              <Col className="expParagraph"> I played 4 years of DI Softball at Michigan, collecting two BIG10 championship titles. I graduated  having majored in Business with concentrations in strategy and technology. I have past internship experience in software development and CRM technology.</Col>
+              <Col className="expParagraph"> I played 4 years of DI Softball at Michigan, collecting two BIG10 championship titles. I graduated  having majored in Business with concentrations in strategy and technology. I have past internship experience in software development and CRM technology. Currently, I am pursuing a Master's of Science in Information, with concentrations in UX Research and Design and Agile Development.</Col>
             </Col>
             <Col>
               <Col className="skillset"> My Skillset </Col>
-              <Col className="skillParagraph">Throughout my coursework I've studied financial management skills such as market analysis, business evaluation, and product development. Additionally, I have experience in various coding languages, primarily Javascript, HTML/CSS, React, and Node.js.</Col>
+              <Col className="skillParagraph">Throughout my coursework I've studied financial management skills such as market analysis, business evaluation, and product development. I am familiar with CRM software, database management, and prototyping tools. Additionally, I have experience in various coding languages, primarily Javascript, HTML/CSS, React, and Node.js.</Col>
             </Col>
           </Row>
         </Row>
